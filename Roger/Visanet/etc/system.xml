@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<config>    
+  <sections>
+    <payment>
+      <groups>
+        <visanet translate="label" module="visanet">
+          <label>Visanet Module</label>
+		  <comment>Module Visanet by Roger Pecho</comment>
+          <sort_order>1000</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>0</show_in_store>
+          <fields>
+            <title translate="label">
+              <label>Title</label>
+              <frontend_type>text</frontend_type>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+              <sort_order>1</sort_order>
+            </title>
+            <active translate="label">
+              <label>Enabled</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+              <sort_order>2</sort_order>
+            </active>
+            <order_status translate="label">
+              <label>New order status</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_order_status</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+              <sort_order>3</sort_order>
+            </order_status>
+			<merchantid translate="label">
+                  <label>Merchant ID</label>
+                  <comment><![CDATA[Merchant Id.]]></comment>
+                  <frontend_type>text</frontend_type>
+                  <sort_order>4</sort_order>
+                  <show_in_default>1</show_in_default>
+                  <show_in_website>1</show_in_website>
+                  <show_in_store>0</show_in_store>
+            </merchantid>
+			
+			<merchantaccesskey translate="label">
+                 <label>Access key</label>
+                 <comment><![CDATA[Access Key.]]></comment>
+                 <frontend_type>text</frontend_type>
+                 <sort_order>5</sort_order>
+                 <show_in_default>1</show_in_default>
+                 <show_in_website>1</show_in_website>
+                 <show_in_store>0</show_in_store>
+            </merchantaccesskey>
+			
+			<merchantsecretaccesskey translate="label">
+                 <label>Secret Access Key</label>
+                 <comment><![CDATA[SecretAccessKey.]]></comment>
+                 <frontend_type>text</frontend_type>
+                 <sort_order>6</sort_order>
+                 <show_in_default>1</show_in_default>
+                 <show_in_website>1</show_in_website>
+                 <show_in_store>0</show_in_store>
+            </merchantsecretaccesskey>
+			
+			<production translate="label">
+              <label>Is Production</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+              <sort_order>7</sort_order>
+            </production>
+				
+		
+			
+			<invocationapidev translate="label">
+                <label>Url Invocation Api Dev (Url con el Merchant Id)</label>
+                <comment><![CDATA[ Url de invocation para dessarollo ejemplo(ttps://devapice.vnforapps.com/api.ecommerce/api/v1/ecommerce/token/1251422).]]></comment>
+                <frontend_type>text</frontend_type>
+             	    <sort_order>8</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+            </invocationapidev>	
+			
+			<invocationapipro translate="label">
+                <label>Url Invocation Api Pro (Url con el Merchant Id)</label>
+                <comment><![CDATA[ Url de invocation para produccion ejemplo(ttps://devapice.vnforapps.com/api.ecommerce/api/v1/ecommerce/token/1251422).]]></comment>
+                <frontend_type>text</frontend_type>
+             	    <sort_order>9</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+            </invocationapipro>			
+			
+			
+			<jslibrarydev translate="label">
+                <label>Url  Checkout Javascrip Library Dev</label>
+                <comment><![CDATA[ Url de la libreria checkout.js para dessarollo]]></comment>
+                <frontend_type>text</frontend_type>
+             	    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+            </jslibrarydev>	
+			
+			
+			<jslibrarypro translate="label">
+                <label>Url  Checkout Javascrip Library Prod</label>
+                <comment><![CDATA[ Url de la libreria checkout.js para produccion]]></comment>
+                <frontend_type>text</frontend_type>
+             	    <sort_order>11</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+            </jslibrarypro>	
+			
+			<authorizationapidev translate="label">
+                <label>Authorization Api Dev</label>
+                <comment><![CDATA[ Url del Api de Authorization]]></comment>
+                <frontend_type>text</frontend_type>
+             	    <sort_order>12</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+            </authorizationapidev>	
+			
+			
+			<authorizationapipro translate="label">
+                <label>Authorization Api Prod</label>
+                <comment><![CDATA[  Url del Api de Authorization]]></comment>
+                <frontend_type>text</frontend_type>
+             	    <sort_order>13</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+            </authorizationapipro>	
+			
+		    <buttonsize translate="label">
+              <label>Button Size (SMALL, MEDIUM, LARGE, DEFAULT)</label>
+                <comment><![CDATA[  Button size (data-buttonsize). ]]></comment>
+                <frontend_type>text</frontend_type>
+             	    <sort_order>14</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+            </buttonsize>
+			
+			<buttoncolor translate="label">
+              <label>Button Color (NAVY, GRAY)</label>
+                <comment><![CDATA[  Button Color (data-buttoncolor). NAVY GRAY solamente]]></comment>
+                <frontend_type>text</frontend_type>
+             	    <sort_order>15</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+            </buttoncolor>
+			
+			<merchantlogo translate="label">
+              <label> URL Merchant Logo</label>
+                <comment><![CDATA[  Logo de la tienda (data-merchantlogo).]]></comment>
+                <frontend_type>text</frontend_type>
+             	    <sort_order>16</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+            </merchantlogo>			
+			
+			<merchantname translate="label">
+              <label>  Merchant Name</label>
+                <comment><![CDATA[ Nombre de la tienda(data-merchantname).]]></comment>
+                <frontend_type>text</frontend_type>
+             	    <sort_order>17</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+            </merchantname>		
+				
+			
+			<formbuttomcolor translate="label">
+              <label>  Form Button Color (Hexadecimal) </label>
+                <comment><![CDATA[ Color del boton pagar en el formulario (data-formbuttoncolor).]]></comment>
+                <frontend_type>text</frontend_type>
+             	    <sort_order>19</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+            </formbuttomcolor>	
+			
+			<showpagar translate="label">
+              <label>Show Amounnt</label>
+			  <comment><![CDATA[ Mostrar el monto en le boton.]]></comment>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>0</show_in_store>
+              <sort_order>20</sort_order>
+            </showpagar>
+				
+			
+            <allowspecific translate="label">
+              <label>Payment from applicable countries</label>
+              <frontend_type>allowspecific</frontend_type>
+              <source_model>adminhtml/system_config_source_payment_allspecificcountries</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+              <sort_order>21</sort_order>
+            </allowspecific>
+            <specificcountry translate="label">
+              <label>Payment from Specific countries</label>
+              <frontend_type>multiselect</frontend_type>
+              <source_model>adminhtml/system_config_source_country</source_model>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+              <sort_order>22</sort_order>
+            </specificcountry>
+          </fields>
+        </visanet>
+      </groups>
+    </payment>
+  </sections>
+</config>
